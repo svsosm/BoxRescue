@@ -25,7 +25,6 @@ public class Soldier : MonoBehaviour
        
         while(time < duration)
         {
-            Debug.Log(transform.rotation.y);
             transform.rotation = Quaternion.Lerp(startValue, target, time / duration);
             time += Time.deltaTime;
             yield return null;
@@ -44,7 +43,6 @@ public class Soldier : MonoBehaviour
 
         while (time < duration)
         {
-            Debug.Log(transform.rotation.y);
             transform.rotation = Quaternion.Lerp(startValue, target, time / duration);
             time += Time.deltaTime;
             yield return null;
